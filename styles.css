@@ -16,8 +16,8 @@ body {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
 
-    width: 80vw;
-    height: 90vh;
+    width: 400px;
+    height: 400px;
     background-color: antiquewhite;
 }
 
