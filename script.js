@@ -4,6 +4,8 @@ let arrowLeft = document.getElementById("arrowLeft")
 let arrowRight = document.getElementById("arrowRight")
 let arrowDown = document.getElementById("arrowDown")
 
+
+let tiles = document.querySelectorAll(".tile")
 let placement = 0
 
 for(i = 0; i < 100; i++) {
@@ -14,7 +16,12 @@ for(i = 0; i < 100; i++) {
 }
 
 arrowUp.addEventListener("click", () => {
+    for (tile of tiles) {
+    tile.classList.remove("green")
+}
     placement += 10
+    let newTile = document.getElementById(placement)
+newTile.classList.add("green")
     console.log(placement)
 })
 arrowLeft.addEventListener("click", () => {
