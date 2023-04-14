@@ -28,14 +28,22 @@ arrowLeft.addEventListener("click", () => {
     placement -= 1
     console.log(placement)
 
+   
+    let newTile = document.getElementById(placement)
+newTile.classList.add("green")
+
 })
 arrowRight.addEventListener("click", () => {
     placement += 1
     console.log(placement)
+let newTile = document.getElementById(placement)
+newTile.classList.add("green")
 
 })
 arrowDown.addEventListener("click", () => {
     placement -= 10
     console.log(placement)
 
+let newTile = document.getElementById(placement)
+newTile.classList.add("green")
 })
