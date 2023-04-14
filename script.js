@@ -19,7 +19,7 @@ arrowUp.addEventListener("click", () => {
     for(tile of tilesArr) {
     tile.classList.remove("green")
 }
-    placement += 10
+    placement -= 10
     let newTile = document.getElementById(placement)
 newTile.classList.add("green")
     console.log(placement)
@@ -41,7 +41,7 @@ newTile.classList.add("green")
 
 })
 arrowDown.addEventListener("click", () => {
-    placement -= 10
+    placement += 10
     console.log(placement)
 
 let newTile = document.getElementById(placement)
